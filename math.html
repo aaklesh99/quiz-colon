@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js">
+
+
+    </script>
+    <title>math quiz</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+        <img src="data:image/jpeg;base64,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" class="logo" ></a>
+        <h3>OBJECTIVE QUIZ</h3>
+        
+    </header> 
+
+    <div class="head_nd">
+        <div class="btngrp">
+                <h2>Change Your Section : </h2>
+            <!-- <button type="button" class="btngrp2" id="btn1" onclick="math();">Aptitude</button></br> -->
+            <button type="button" class="btngrp2" id="btn2" onclick="reasoning()">Reasoning</button></br>
+            <button type="button" class="btngrp2" id="btn3" onclick="english();">English</button></br>
+            <!-- <button type="button" class="btngrp2" id="btn4" onclick="Computer();">Computer</button> -->
+        </div>       
+    </div>
+    <hr class="hrline">
+
+    <div class="math">
+
+      
+            <h5> 1. A person crosses a 600 m long street in 5 minutes. What is his speed in km per hour?</h5><br/>
+                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()">A. 3.6</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 7.2</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 8.4</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 10</button>
+            
+            <h5> 2. An aeroplane covers a certain distance at a speed of 240 kmph in 5 hours. To cover the same distance in 1 2/3 hours, it must travel at a speed of?</h5><br/>
+                    <button type="button" class="option" id="btn1" onclick="changeColor()">A. 300</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 630</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 600</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 720</button>
+
+            <h5>3. A car covers its journey at the speed of 80km/hr in 10hours. If the same distance is to be covered in 4 hours, by how much the speed of car will have to increase?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 40km/hr</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 60km/hr</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 90km/hr</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 120km/hr</button>
+            
+            <h5>4. A person walking at 4 Kmph reaches his office 8 minutes late. If he walks at 6 Kmph, he reaches there 8 minutes earlier. How far is the office from his house?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 3 1/5 Km</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 2 1/5 Km</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 4 1/5 Km</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 5 1/5 Km</button>
+                   
+            <h5>5. An express train travelled at an average speed of 100 km/hr, stopping for 3 minutes after every 75 km. How long did it take to reach its destination 600 km from the starting point?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 6 hrs 27 min</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 6 hrs 24 min</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 6 hrs 21 min</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 6 hrs 30 min</button>
+
+            <h5>6. Two trains starting at the same time from 2 stations 200 km apart and going in opposite direction cross each other at a distance of 110 km from one of the stations. What is the ratio of their speeds?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A.11:9</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 7:3</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 18:4</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. None of these</button>
+
+            <h5>7. Walking at the rate of 4 kmph a man cover a certain distance in 2 hr 45 min. Running at a speed of 16.5 kmph the man will cover the same distance in.</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 12 min</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 40 min</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 50 min</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 60 min</button>
+            <h5>8. Walking 6/7th of his usual speed, a man is 12 minutes too late. What is the usual time taken by him to cover that distance?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 1 hr 42 min</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 1 hr</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 2 hr</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 1 hr 12 min</button>
+            
+            <h5>9. The speed of a car increases by 2 kms after every one hour. If the distance travelling in the first one hour was 35 kms. what was the total distance travelled in 12 hours?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 456 km</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 482 km</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 558 km</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 552 km</button>
+
+            <h5>10. A runner can complete a 750 m race in two and a half minutes. Will he be able to beat another runner who runs at 17.95 km/hr?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. Yes</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. No</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. Insufficient Data</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. None</button>
+            
+            <h5>11. Express 25 mps in kmph?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 15 kmph</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 99 kmph</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 90 kmph</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. None</button>
+
+            <h5>12. How long will a boy take to run round a square field of side 35 meters, If he runs at the rate of 9 km/hr?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 50 sec</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 52 sec</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 54 sec</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 56 sec</button>
+            
+            <h5>13. A speed of a train is 20 meters per second. It can cross a pole in 10 seconds. What is the length of a train?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 150 m</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 250 m</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 200 m</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 300 m</button>
+
+            <h5>14. Nancy travelled a distance of 455 km by car in 10 hours. Find the speed of the car.</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 25.5 km/hr</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 45.5 km/hr</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 30 km/hr</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 65 km/hr</button>
+
+            <h5>15. A person goes from A to B at the speed of 40 kmph and comes back at the speed of 60 kmph. What is his average speed for the whole journey?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 56 km/h</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 48 km/h</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 36 km/h</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 25 km/h</button>
+
+            <h5>16. Wind blows 160 miles in 330min.for 80 miles how much time required</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 165</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 162</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 159</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 160</button>
+
+            <h5>17. Excluding stoppages, the speed of a bus is 54 kmph and including stoppages, it is 45 kmph. For how many minutes does the bus stop per hour?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 9</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 10</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 12</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 20</button>
+
+            <h5>18. A person crosses a 600 m long street in 5 minutes. What is his speed in km per hour?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 3.6</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 7.2</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 8.4</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 10</button>
+
+            <h5>19. A bus moves at a speed of 81 km/h. What is the speed of the bus in meters per second?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 22.65</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 22.5</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 28.5</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 20.5</button>
+
+            <h5>20. A motorboat covers 25 km upstream and 39 km downstream by travelling at the same speed for 8 hours. On another occasion with the same speed, it covers 35 km upstream and 52 km downstream in 11 hours. What is the speed of the stream?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> 5 km/hr</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">4 km/hr</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">3 km/hr</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">2 km/hr</button>
+
+            <h5>21. The ratio between the speeds of two trains is 7: 8. If the second train runs 400 km in 4 hours, then the speed of the first train is?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> 83.5 km/hr</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">87.5 km/hr</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">84.5 km/hr</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">86.5 km/hr</button>
+
+            <h5>22. A truck covers a certain distance in 15 hours at the speed of 60 km./ hr. What is the average speed of a car which travels a distance of 150 kms more than the track in the same time?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 70 km/ hr</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 56 km/ hr</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 80 km/ hr</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 85 km/ hr</button>
+
+            <h5>23. A car takes 6 hours to cover a distance of 540 Km. how much should the speed in Kmph be maintained to cover the same direction in 3/2th of the previous time?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 60 Kmph</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 62 Kmph</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 75 Kmph</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 77 Kmph</button>
+
+           <h5>24. A thief is noticed by a policeman from a distance of 200 m. The thief starts running and the policeman chases him. The thief and the policeman run at the rate of 10 km and 11 km per hour respectively. What is the distance between them after 6 minutes?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 50 meter</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 110 meter</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. None of above</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 100 meter</button>
+
+            <h5>25. Suresh walks from his home to Bus station. If he walks at the speed of 9 kmph, he reaches the bus station 3 minutes before the arrival of the bus. However, if he walks at the speed of 6 kmph, he misses the bus by 2 minutes. Find the distance covered by him to reach the bus station.</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 1.5 km</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 1.2 km</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 2.5 km</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 3 km</button>
+
+            <h5>26. Find compound interest on Rs. 8000 at 15% per annum for 2 years 4 months, compounded annually</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 2109</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 3109</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 4109</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 6109</button>
+
+            <h5>27. Find the compound interest on Rs. 7500 at 4% per annum for 2 years, compounded annually.</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. Rs. 610</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. Rs. 612</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. Rs. 614</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. Rs. 616</button>
+
+            <h5>28. The simple interest on a sum of money for 3 years at 6²/3 % per annum is $ 6750. What will be the compound interest on the same sum at the same rate for the same period, compounded annually?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 8125</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 6655</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 4496</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 7210</button>
+
+            <h5>29. If a sum of Rs.8000 lended for 20% per annum at compound interest then the sum of the amount will be Rs.13824 in:</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 2 years</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 1year</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 3years</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 4years</button>
+
+            <h5>30. In what time will Rs. 1000 become Rs. 1331 at 10% per annum compounded annually?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 1 year</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 4 year</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 3 year</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 6 year</button>
+
+            <h5>31. What is the difference between the compound interests on Rs. 5000 for 11/2 years at 4% per annum compounded yearly and half-yearly?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. Rs. 2.04</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. Rs. 4.80</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. Rs. 3.06</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. Rs. 8.30</button>
+
+            <h5>32. What would be the compound interest on Rs.7700/- at 15 ¼% per annum for 2 years compounded annually</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. Rs.2725.75/-</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. Rs.2527.57/-</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. Rs.2227.57/-</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. Rs.2520.57/-</button>
+
+            <h5>33. There is 80% increase in an amount in 8 years at simple interest. What will be the compound interest of 80% increase in an amount in 8 years at simple interest? What will be the compound interest of Rs. 14,000 after 3 years at the same rate?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. Rs.3794</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. Rs.3714</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. Rs.4612</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. Rs.4634</button>
+
+            <h5>34. The compound interest on Rs. 30,000 at 7% per annum is Rs. 4347. The period (in years) is:</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 2</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 2 1/2</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 3</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 4</button>
+
+            <h5>35. A sum of money amounts to Rs.6690 after 3 years and to Rs.10,035 after 6 years on compound interest.find the sum.</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 4360</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 4460</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 4560</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 4660</button>
+
+            <h5>36. Find out the C.I on Rs.5000 at 4% p.a. compound half-yearly for 1 1/2 years.</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. Rs.420.20</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. Rs.319.06</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. Rs.306.04</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. Rs.294.75</button>
+
+            <h5>37. The Simple interest on a certain sum for 2 years at 10% per annum is Rs. 90. The corresponding compound interest is</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. Rs. 99</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. Rs. 94.50</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. Rs. 95.60</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. Rs. 108</button>
+
+            <h5>38. The difference between simple interest and compound interest on Rs. 600 for 1 years at 10% per annum, reckoned half yearly is?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. Nil</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. Rs. 6.60</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. Rs. 4.40</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. Rs. 1.50</button>
+
+            <h5>39. A tree increases annually by 1/8 th of its height. By how much will it increase after 2 years, if it stands today 64 cm high?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 72 cm</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 74 cm</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 75 cm</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 81 cm</button>
+
+            <h5>40. The difference between the compound interest compounded annually and the simple interest on a certain sum for 2 years at 6% per annum is $ 18. Find the sum.
+        </h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 5000</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 6000</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 7000</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 8000</button>
+
+            <h5>41. In this question, the formula is when the interest is compounded annually to solve this problem of compound interest. 4. At what rate per cent per annum will Ron lends a sum of $2000 to Ben. Ben returned after 2 years $2205, compounded annually?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 7%</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 5%</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 6%</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 4%</button>
+
+            <h5>42. Find the difference between the compound interests and simple interests when Rs.1000 is withdrawn from the bank at the rate of 10% per annum for 2 years.</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. Rs. 20</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. Rs. 10</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. Rs. 15</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. Rs. 25</button>
+
+            <h5>43. Certain sum becomes 3 times it self at compound interest in 10 years. In how many years it becomes 9 times?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 25 years</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 27 years</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 30 years</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 20 years</button>
+
+            <h5>44. Find the sum of all the 4 digit numbers that can be formed with the digits 3, 4, 5 and 6</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 119988</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 11988</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 191988</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. None of these</button>
+
+            <h5>45. In how many different ways can the letters of the word 'LEADING' be arranged in such a way that the vowels always come together?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 720</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 520</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 700</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 750</button>
+
+            <h5>46. How many combinations of students are possible if the group is to consist of exactly 3 freshmen?
+                </h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 5000</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 4550</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 4000</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 3550</button>
+
+            <h5>47. Find the number of words, with or without meaning, that can be formed with the letters of the word ‘SWIMMING?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 10080</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 4569</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 9800</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 2478</button>
+
+            <h5>48. A five-digit number is formed using digits 1, 3, 5, 7 and 9 without repeating any one of them. What is the sum of all such possible numbers?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 6666600</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 6666660</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 6666666</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. None of these</button>
+
+            <h5>49. An intelligence agency forms a code of two distinct digits selected from 0, 1, 2, …., 9 such that the first digit of the code is nonzero. The code, handwritten on a slip, can
+                however potentially create confusion, when read upsidedown-for example, the code 91 may appear as 16. How many codes are there for which no such confusion can
+                arise?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 80</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 78</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 71</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 69</button>
+
+            <h5>50. A college has 10 basketball players. A 5-member team and a captain will be selected out of these 10 players. How many different selections can be made?</h5><br/>                
+                    <button type="button" class="option" id="btn1" onclick="changeColor()"> A. 1260</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn2" onclick="changeColor1()">B. 1400</button></br>
+                    <button type="button" class="option" id="btn3" onclick="changeColor2()">C. 1250</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="option" id="btn4" onclick="changeColor3()">D. 1600</button>
+
+           
+    </div>
+</body>
+</html>
